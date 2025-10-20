@@ -165,7 +165,7 @@ export default async function ModelDetailPage({ params }: PageProps) {
               Hasonló modellek
             </Heading>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {relatedModels.map((relatedModel) => (
+              {relatedModels.map((relatedModel: any) => (
                 <ModelCard key={relatedModel.slug} {...relatedModel} />
               ))}
             </div>

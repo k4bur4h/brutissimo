@@ -667,7 +667,7 @@ export function getRelatedModels(modelSlug: string) {
         }],
       }
     })
-    .filter(Boolean)
+    .filter((item): item is NonNullable<typeof item> => item !== null)
 }
 
 // Kategória nevek magyar nyelven
