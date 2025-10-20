@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Modellek', href: '/modellek' },
   { name: 'Szolgáltatások', href: '/szolgaltatasok' },
   { name: 'Rólunk', href: '/rolunk' },
-  { name: 'Blog', href: '/blog' },
+  // { name: 'Blog', href: '/blog' }, // Ideiglenesen kikapcsolva
   { name: 'Kapcsolat', href: '/kapcsolat' },
 ]
 
