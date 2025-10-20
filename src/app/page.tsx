@@ -13,8 +13,8 @@ const heroData = {
   heading: 'Professzionális Vending Automata Megoldások',
   subheading: 'Modern, megbízható automata megoldások irodák, gyárak és közintézmények számára. Teljes körű üzemeltetéssel és szervizzel.',
   image: {
-    url: 'https://images.unsplash.com/photo-1596480499469-78b992f492d1?w=1920',
-    alt: 'Vending automata',
+    url: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=1920&q=80',
+    alt: 'Modern vending automata',
   },
   cta: [
     { text: 'Modellek böngészése', url: '/modellek', style: 'primary' as const },
@@ -61,7 +61,7 @@ const featuredModels = [
     slug: 'necta-karisma',
     description: 'Prémium kávéautomata friss tejjel, 16 féle ital választékkal.',
     image: {
-      url: 'https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=800',
+      url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=75',
       alt: 'Necta Karisma kávéautomata',
     },
     features: ['Érintőképernyős kezelőfelület', 'Friss tej rendszer', '16 féle ital'],
@@ -72,7 +72,7 @@ const featuredModels = [
     slug: 'sielaff-cvs-650',
     description: 'Nagy kapacitású snack és ital kombó automata 650 termékhellyel.',
     image: {
-      url: 'https://images.unsplash.com/photo-1587049016823-69ef9d68bd44?w=800',
+      url: 'https://images.unsplash.com/photo-1575224526797-5730d09d781d?w=800&q=75',
       alt: 'Sielaff CVS 650 kombó automata',
     },
     features: ['650 termék kapacitás', 'Hűtött italok', 'Energiahatékony'],
@@ -83,7 +83,7 @@ const featuredModels = [
     slug: 'necta-snakky-max',
     description: 'Kompakt snack automata 32 termékválasztékkal ideális irodai környezetbe.',
     image: {
-      url: 'https://images.unsplash.com/photo-1619975362235-73fd85efa4ba?w=800',
+      url: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&q=75',
       alt: 'Necta Snakky Max snack automata',
     },
     features: ['32 termékválaszték', 'Kompakt méret', 'LED világítás'],
@@ -92,12 +92,12 @@ const featuredModels = [
 ]
 
 const partners = [
-  { name: 'Partner 1', image: 'https://via.placeholder.com/240x120/f3f4f6/a1a1aa?text=Partner+1' },
-  { name: 'Partner 2', image: 'https://via.placeholder.com/240x120/f3f4f6/a1a1aa?text=Partner+2' },
-  { name: 'Partner 3', image: 'https://via.placeholder.com/240x120/f3f4f6/a1a1aa?text=Partner+3' },
-  { name: 'Partner 4', image: 'https://via.placeholder.com/240x120/f3f4f6/a1a1aa?text=Partner+4' },
-  { name: 'Partner 5', image: 'https://via.placeholder.com/240x120/f3f4f6/a1a1aa?text=Partner+5' },
-  { name: 'Partner 6', image: 'https://via.placeholder.com/240x120/f3f4f6/a1a1aa?text=Partner+6' },
+  { name: 'MOL', image: null },
+  { name: 'Bosch', image: null },
+  { name: 'Mercedes', image: null },
+  { name: 'Auchan', image: null },
+  { name: 'Tesco', image: null },
+  { name: 'OTP Bank', image: null },
 ]
 
 const services = [

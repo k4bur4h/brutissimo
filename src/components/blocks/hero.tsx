@@ -34,14 +34,20 @@ export function Hero({ heading, subheading, image, cta }: HeroProps) {
         </div>
       )}
       
+      {!image && (
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-yellow-500 via-orange-500 to-red-600">
+          <div className="absolute inset-0 bg-black/30" />
+        </div>
+      )}
+      
       <Container className="relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <Heading as="h1" size="4xl" className={image ? 'text-white' : ''}>
+          <Heading as="h1" size="4xl" className={image ? 'text-white' : 'text-white'}>
             {heading}
           </Heading>
           
           {subheading && (
-            <p className={`mt-6 text-lg md:text-xl ${image ? 'text-white/90' : 'text-neutral-600'}`}>
+            <p className={`mt-6 text-lg md:text-xl ${image ? 'text-white/90' : 'text-white/90'}`}>
               {subheading}
             </p>
           )}
