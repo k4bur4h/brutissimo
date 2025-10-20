@@ -14,6 +14,10 @@ export default function PrivacyPage() {
       <Hero
         heading="Adatvédelmi Tájékoztató"
         subheading="Információk az Ön személyes adatainak kezeléséről"
+        image={{
+          url: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1920&q=80',
+          alt: 'Adatvédelem'
+        }}
       />
 
       <Section spacing="lg">

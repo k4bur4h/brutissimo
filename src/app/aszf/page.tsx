@@ -14,6 +14,10 @@ export default function TermsPage() {
       <Hero
         heading="Általános Szerződési Feltételek"
         subheading="Hatályos: 2024. január 1-től"
+        image={{
+          url: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80',
+          alt: 'Szerződési feltételek'
+        }}
       />
 
       <Section spacing="lg">

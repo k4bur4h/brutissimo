@@ -137,6 +137,10 @@ export default function ModelsPage() {
       <Hero
         heading="Automata modellek"
         subheading="Válasszon prémium vending automata kínálatunkból. Minden igényre találunk megoldást."
+        image={{
+          url: 'https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=1920&q=80',
+          alt: 'Vending automata kollekció'
+        }}
       />
 
       <Section spacing="lg">

@@ -114,6 +114,10 @@ export default function AboutPage() {
       <Hero
         heading="Rólunk"
         subheading="Megbízható partner a vending automaták világában több mint 10 éve"
+        image={{
+          url: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&q=80',
+          alt: 'Brutissimo csapat'
+        }}
       />
 
       {/* Bemutatkozás */}

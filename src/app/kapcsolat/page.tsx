@@ -87,6 +87,10 @@ export default function ContactPage() {
       <Hero
         heading="Kapcsolat"
         subheading="Kérdése van? Ajánlatot szeretne? Vegye fel velünk a kapcsolatot!"
+        image={{
+          url: 'https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1920&q=80',
+          alt: 'Kapcsolatfelvétel'
+        }}
       />
 
       <Section spacing="lg">

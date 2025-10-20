@@ -134,6 +134,10 @@ export default function ServicesPage() {
       <Hero
         heading="Teljes körű szolgáltatások"
         subheading="Komplett megoldás a telepítéstől az üzemeltetésig. Bízza ránk automatáit, mi gondoskodunk mindenről."
+        image={{
+          url: 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=1920&q=80',
+          alt: 'Vending automata szerviz'
+        }}
       />
 
       {/* Szolgáltatások részletesen */}
