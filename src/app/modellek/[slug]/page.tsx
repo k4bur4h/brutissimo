@@ -9,132 +9,21 @@ import { Card } from '@/components/ui/card'
 import { ModelCard } from '@/components/blocks/model-card'
 import { CTASection } from '@/components/blocks/cta-section'
 import { ChevronLeft, Download, Check } from 'lucide-react'
+import { modelDatabase, getRelatedModels, getAllModelSlugs } from '@/lib/model-data'
 
 interface PageProps {
   params: Promise<{ slug: string }>
 }
 
-// Mock data - később Sanity-ből jön
-const modelData = {
-  'necta-karisma': {
-    title: 'Necta Karisma',
-    description: 'Prémium kávéautomata friss tejjel, 16 féle ital választékkal. Ideális nagyobb irodák és gyárak számára.',
-    coverImage: {
-      url: 'https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=1200',
-      alt: 'Necta Karisma kávéautomata',
-    },
-    gallery: [
-      { url: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800', alt: 'Kávé készítés' },
-      { url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800', alt: 'Kezelőfelület' },
-      { url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800', alt: 'Belső mechanizmus' },
-    ],
-    features: [
-      'Érintőképernyős kezelőfelület',
-      'Friss tej rendszer',
-      '16 féle ital választék',
-      'Napi 200+ adag kapacitás',
-      'Automatikus tisztítási program',
-      'Energiatakarékos üzemmód',
-    ],
-    specifications: [
-      {
-        group: 'Méretek',
-        items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '654 mm' },
-          { label: 'Mélység', value: '790 mm' },
-          { label: 'Súly', value: '145 kg' },
-        ],
-      },
-      {
-        group: 'Kapacitás',
-        items: [
-          { label: 'Kávébab tartály', value: '2 x 2,2 kg' },
-          { label: 'Instant tartály', value: '6 x 2,5 l' },
-          { label: 'Tej tartály', value: '9 liter' },
-          { label: 'Pohár kapacitás', value: '550 db' },
-          { label: 'Napi kapacitás', value: '200+ adag' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '2300W' },
-          { label: 'Energiaosztály', value: 'A+' },
-          { label: 'Készenléti fogyasztás', value: '35W' },
-        ],
-      },
-      {
-        group: 'Funkciók',
-        items: [
-          { label: 'Fizetési rendszer', value: 'MDB protokoll' },
-          { label: 'Telemetria', value: 'EVA-DTS kompatibilis' },
-          { label: 'Kijelző', value: '7" színes érintőképernyő' },
-          { label: 'Hűtés', value: 'R290 környezetbarát' },
-        ],
-      },
-    ],
-    longDescription: `
-      <p>A Necta Karisma a legmodernebb technológiát ötvözi a kiváló kávéminőséggel. Ez a professzionális automata tökéletes választás nagyobb irodák, gyárak és közintézmények számára, ahol fontos a megbízhatóság és a minőség.</p>
-      
-      <h3>Kiváló kávéminőség</h3>
-      <p>Az automata két különálló kávébab tartállyal rendelkezik, így egyszerre két különböző kávékeveréket kínálhat. A beépített őrlő precíz őrlési finomságot biztosít, ami garantálja a tökéletes espresso elkészítését.</p>
-      
-      <h3>Friss tej rendszer</h3>
-      <p>A hűtött friss tej rendszer minden tejhabos ital esetén krémesen habos, barista minőségű eredményt garantál. Az automatikus tisztítási program biztosítja a higiénikus működést.</p>
-      
-      <h3>Intelligens kezelőfelület</h3>
-      <p>A 7 colos színes érintőképernyő intuitív kezelést tesz lehetővé. A felhasználók könnyedén választhatnak a 16 féle ital közül, testreszabhatják italaikat, és akár videós reklámokat is megtekinthetnek.</p>
-    `,
-    relatedModels: [
-      'necta-kikko-max',
-      'bianchi-lei-700',
-      'necta-concerto',
-    ],
-  },
+export async function generateStaticParams() {
+  return getAllModelSlugs().map((slug) => ({
+    slug,
+  }))
 }
-
-// Mock related models data
-const relatedModelsData = [
-  {
-    title: 'Necta Kikko Max',
-    slug: 'necta-kikko-max',
-    description: 'Univerzális automata forró italokhoz, 12 választékkal.',
-    image: {
-      url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800',
-      alt: 'Necta Kikko Max',
-    },
-    features: ['12 féle ital', 'Kompakt design', 'Érintőképernyő'],
-    categories: [{ title: 'Kávéautomata', slug: 'kaveautomata' }],
-  },
-  {
-    title: 'Bianchi Lei 700',
-    slug: 'bianchi-lei-700',
-    description: 'Professzionális instant kávéautomata 7 választékkal.',
-    image: {
-      url: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
-      alt: 'Bianchi Lei 700 kávéautomata',
-    },
-    features: ['7 féle ital', 'Instant rendszer', 'Gyors kiszolgálás'],
-    categories: [{ title: 'Kávéautomata', slug: 'kaveautomata' }],
-  },
-  {
-    title: 'Necta Concerto',
-    slug: 'necta-concerto',
-    description: 'Prémium szemes kávé automata barista minőséggel.',
-    image: {
-      url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
-      alt: 'Necta Concerto',
-    },
-    features: ['Szemes kávé', 'Barista minőség', '20 féle ital'],
-    categories: [{ title: 'Kávéautomata', slug: 'kaveautomata' }],
-  },
-]
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params
-  const model = modelData[slug as keyof typeof modelData]
+  const model = modelDatabase[slug]
   
   if (!model) {
     return {
@@ -150,11 +39,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ModelDetailPage({ params }: PageProps) {
   const { slug } = await params
-  const model = modelData[slug as keyof typeof modelData]
+  const model = modelDatabase[slug]
 
   if (!model) {
     notFound()
   }
+
+  const relatedModels = getRelatedModels(slug)
 
   return (
     <>
@@ -267,18 +158,20 @@ export default async function ModelDetailPage({ params }: PageProps) {
       </Section>
 
       {/* Related models */}
-      <Section spacing="lg" background="gray">
-        <Container>
-          <Heading as="h2" size="xl" className="text-center mb-8">
-            Hasonló modellek
-          </Heading>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {relatedModelsData.map((relatedModel) => (
-              <ModelCard key={relatedModel.slug} {...relatedModel} />
-            ))}
-          </div>
-        </Container>
-      </Section>
+      {relatedModels.length > 0 && (
+        <Section spacing="lg" background="gray">
+          <Container>
+            <Heading as="h2" size="xl" className="text-center mb-8">
+              Hasonló modellek
+            </Heading>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {relatedModels.map((relatedModel) => (
+                <ModelCard key={relatedModel.slug} {...relatedModel} />
+              ))}
+            </div>
+          </Container>
+        </Section>
+      )}
 
       {/* CTA */}
       <CTASection
