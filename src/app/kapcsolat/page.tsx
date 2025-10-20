@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { Metadata } from 'next'
 import { Hero } from '@/components/blocks/hero'
 import { Section } from '@/components/ui/section'
 import { Container } from '@/components/ui/container'

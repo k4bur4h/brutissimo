@@ -11,10 +11,10 @@ export const client = createClient({
 
 const builder = imageUrlBuilder(client)
 
-export function urlFor(source: any) {
+export function urlFor(source: unknown) {
   return builder.image(source)
 }
 
-export async function sanityFetch<T = any>(query: string, params: Record<string, any> = {}) {
+export async function sanityFetch<T = unknown>(query: string, params: Record<string, unknown> = {}) {
   return client.fetch<T>(query, params)
 }

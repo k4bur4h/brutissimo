@@ -2,7 +2,6 @@ import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
 import { Heading } from '@/components/ui/heading'
 import { Section } from '@/components/ui/section'
-import { cn } from '@/lib/utils'
 
 interface CTASectionProps {
   heading: string
