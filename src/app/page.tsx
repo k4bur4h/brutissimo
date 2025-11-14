@@ -57,37 +57,37 @@ const features = [
 
 const featuredModels = [
   {
-    title: 'Necta Karisma',
-    slug: 'necta-karisma',
-    description: 'Prémium kávéautomata friss tejjel, 16 féle ital választékkal.',
+    title: 'NESCAFÉ Alegria 630',
+    slug: 'nescafe-alegria-630',
+    description: 'Kompakt és megbízható kávéautomata kisebb irodák számára.',
     image: {
       url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=75',
-      alt: 'Necta Karisma kávéautomata',
+      alt: 'NESCAFÉ Alegria 630 kávéautomata',
     },
-    features: ['Érintőképernyős kezelőfelület', 'Friss tej rendszer', '16 féle ital'],
+    features: ['7 italtípus', 'Kompakt méret', 'Energiatakarékos'],
     categories: [{ title: 'Kávéautomata', slug: 'kaveautomata' }],
   },
   {
-    title: 'Sielaff CVS 650',
-    slug: 'sielaff-cvs-650',
-    description: 'Nagy kapacitású snack és ital kombó automata 650 termékhellyel.',
+    title: 'NESCAFÉ Alegria ATS650',
+    slug: 'nescafe-alegria-ats650',
+    description: 'Nagy teljesítményű automata érintőképernyővel és 12 italtípussal.',
     image: {
-      url: 'https://images.unsplash.com/photo-1575224526797-5730d09d781d?w=800&q=75',
-      alt: 'Sielaff CVS 650 kombó automata',
+      url: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=75',
+      alt: 'NESCAFÉ Alegria ATS650 kávéautomata',
     },
-    features: ['650 termék kapacitás', 'Hűtött italok', 'Energiahatékony'],
-    categories: [{ title: 'Kombó automata', slug: 'kombo' }],
+    features: ['Érintőképernyő', '12 italtípus', 'Nagy kapacitású tartályok'],
+    categories: [{ title: 'Kávéautomata', slug: 'kaveautomata' }],
   },
   {
-    title: 'Necta Snakky Max',
-    slug: 'necta-snakky-max',
-    description: 'Kompakt snack automata 32 termékválasztékkal ideális irodai környezetbe.',
+    title: 'Astoria Forma',
+    slug: 'astoria-forma',
+    description: 'Professzionális kávégép kiváló minőségű eszpresszóhoz.',
     image: {
-      url: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&q=75',
-      alt: 'Necta Snakky Max snack automata',
+      url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&q=75',
+      alt: 'Astoria Forma kávégép',
     },
-    features: ['32 termékválaszték', 'Kompakt méret', 'LED világítás'],
-    categories: [{ title: 'Snack automata', slug: 'snack' }],
+    features: ['Professzionális minőség', 'Gőzfúvóka', 'Rozsdamentes acél'],
+    categories: [{ title: 'Kávéautomata', slug: 'kaveautomata' }],
   },
 ]
 

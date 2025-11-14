@@ -25,44 +25,108 @@ export interface ModelData {
 }
 
 export const modelDatabase: Record<string, ModelData> = {
-  'necta-karisma': {
-    title: 'Necta Karisma',
-    description: 'Prémium kávéautomata friss tejjel, 16 féle ital választékkal. Ideális nagyobb irodák és gyárak számára.',
+  // NESCAFÉ kávégépek
+  'nescafe-alegria-630': {
+    title: 'NESCAFÉ Alegria 630',
+    description: 'Kompakt és megbízható kávéautomata kisebb irodák számára. Friss tejjel és változatos italválasztékkal.',
     category: 'kaveautomata',
     coverImage: {
-      url: 'https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=1200',
-      alt: 'Necta Karisma kávéautomata',
+      url: '/images/NESCAFÉ Alegria 630 front.jpg',
+      alt: 'NESCAFÉ Alegria 630 kávéautomata',
     },
     gallery: [
-      { url: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800', alt: 'Kávé készítés' },
-      { url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800', alt: 'Kezelőfelület' },
-      { url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800', alt: 'Belső mechanizmus' },
+      { url: '/images/NESCAFÉ Alegria 630 front.jpg', alt: 'NESCAFÉ Alegria 630 előnézet' },
+      { url: '/images/image001 (3).png', alt: 'NESCAFÉ termékválaszték' },
+      { url: '/images/EZ Care.PNG', alt: 'Egyszerű karbantartás' },
     ],
     features: [
-      'Érintőképernyős kezelőfelület',
+      'Kompakt méret - helytakarékos',
       'Friss tej rendszer',
-      '16 féle ital választék',
-      'Napi 200+ adag kapacitás',
-      'Automatikus tisztítási program',
-      'Energiatakarékos üzemmód',
+      '8 féle ital választék',
+      'Napi 100+ adag kapacitás',
+      'Egyszerű tisztítás és karbantartás',
+      'NESCAFÉ minőségi kávé',
     ],
     specifications: [
       {
         group: 'Méretek',
         items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '654 mm' },
-          { label: 'Mélység', value: '790 mm' },
-          { label: 'Súly', value: '145 kg' },
+          { label: 'Magasság', value: '585 mm' },
+          { label: 'Szélesség', value: '330 mm' },
+          { label: 'Mélység', value: '540 mm' },
+          { label: 'Súly', value: '32 kg' },
         ],
       },
       {
         group: 'Kapacitás',
         items: [
-          { label: 'Kávébab tartály', value: '2 x 2,2 kg' },
-          { label: 'Instant tartály', value: '6 x 2,5 l' },
-          { label: 'Tej tartály', value: '9 liter' },
-          { label: 'Pohár kapacitás', value: '550 db' },
+          { label: 'Kávé tartály', value: '2 kg' },
+          { label: 'Tej tartály', value: '4 liter' },
+          { label: 'Pohár kapacitás', value: '300 db' },
+          { label: 'Napi kapacitás', value: '100+ adag' },
+        ],
+      },
+      {
+        group: 'Energia',
+        items: [
+          { label: 'Feszültség', value: '230V / 50Hz' },
+          { label: 'Teljesítmény', value: '1600W' },
+          { label: 'Energiaosztály', value: 'A' },
+        ],
+      },
+    ],
+    longDescription: `
+      <p>A NESCAFÉ® Alegria 630 a tökéletes választás kisebb irodák és munkahelyek számára. Ez a kompakt, mégis teljes értékű kávéautomata egyesíti a NESCAFÉ® világszerte ismert minőségét a modern technológiával.</p>
+      
+      <h3>A NESCAFÉ® minőség garanciája</h3>
+      <p>A NESCAFÉ® több mint 80 éves tapasztalatával és szakértelmével garantálja a kiváló minőségű kávéélményt. Minden csésze kávé mögött generációk tudása és a fenntartható kávétermesztés iránti elkötelezettség áll.</p>
+      
+      <h3>Fenntartható kávétermesztés</h3>
+      <p>A NESCAFÉ® termelőföldi program keretében támogatjuk a kisbirtokos gazdákat, segítve őket abban, hogy gazdaságaik hatékonyabbá és fenntarthatóbbá váljanak. Ez biztosítja, hogy minden csésze NESCAFÉ® kávé nem csak finom, hanem felelősségtudatos választás is.</p>
+      
+      <h3>Egyszerű használat és karbantartás</h3>
+      <p>Az Alegria 630 modellt a könnyű kezelhetőség jegyében tervezték. Az intuitív kezelőfelület és az egyszerű tisztítási folyamat minimális időt és erőfeszítést igényel a személyzettől.</p>
+    `,
+    relatedModels: ['nescafe-alegria-860', 'nescafe-alegria-ats650', 'nescafe-fts-30-e'],
+  },
+
+  'nescafe-alegria-860': {
+    title: 'NESCAFÉ Alegria 860',
+    description: 'Nagy kapacitású professzionális kávéautomata. Ideális nagyobb irodák és közösségi terek számára.',
+    category: 'kaveautomata',
+    coverImage: {
+      url: '/images/NESCAFÉ Alegria 860.jpg',
+      alt: 'NESCAFÉ Alegria 860 kávéautomata',
+    },
+    gallery: [
+      { url: '/images/NESCAFÉ Alegria 860.jpg', alt: 'NESCAFÉ Alegria 860' },
+      { url: '/images/image001 (3).png', alt: 'Termékválaszték' },
+      { url: '/images/EZ Care.PNG', alt: 'Karbantartás' },
+    ],
+    features: [
+      'Nagy kapacitás - 200+ adag naponta',
+      'Széles italválaszték',
+      'Dupla kávétartály',
+      'Friss tej opció',
+      'Energiatakarékos üzemmód',
+      'Telemetria kompatibilis',
+    ],
+    specifications: [
+      {
+        group: 'Méretek',
+        items: [
+          { label: 'Magasság', value: '715 mm' },
+          { label: 'Szélesség', value: '400 mm' },
+          { label: 'Mélység', value: '580 mm' },
+          { label: 'Súly', value: '45 kg' },
+        ],
+      },
+      {
+        group: 'Kapacitás',
+        items: [
+          { label: 'Kávé tartály', value: '2 x 2 kg' },
+          { label: 'Tej tartály', value: '6 liter' },
+          { label: 'Pohár kapacitás', value: '500 db' },
           { label: 'Napi kapacitás', value: '200+ adag' },
         ],
       },
@@ -70,583 +134,432 @@ export const modelDatabase: Record<string, ModelData> = {
         group: 'Energia',
         items: [
           { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '2300W' },
+          { label: 'Teljesítmény', value: '1800W' },
           { label: 'Energiaosztály', value: 'A+' },
-          { label: 'Készenléti fogyasztás', value: '35W' },
-        ],
-      },
-      {
-        group: 'Funkciók',
-        items: [
-          { label: 'Fizetési rendszer', value: 'MDB protokoll' },
-          { label: 'Telemetria', value: 'EVA-DTS kompatibilis' },
-          { label: 'Kijelző', value: '7" színes érintőképernyő' },
-          { label: 'Hűtés', value: 'R290 környezetbarát' },
         ],
       },
     ],
     longDescription: `
-      <p>A Necta Karisma a legmodernebb technológiát ötvözi a kiváló kávéminőséggel. Ez a professzionális automata tökéletes választás nagyobb irodák, gyárak és közintézmények számára, ahol fontos a megbízhatóság és a minőség.</p>
+      <p>A NESCAFÉ® Alegria 860 a professzionális kávéautomaták csúcsát képviseli. Nagy kapacitása és megbízhatósága ideális választássá teszi forgalmas irodák, gyárak és közintézmények számára.</p>
       
-      <h3>Kiváló kávéminőség</h3>
-      <p>Az automata két különálló kávébab tartállyal rendelkezik, így egyszerre két különböző kávékeveréket kínálhat. A beépített őrlő precíz őrlési finomságot biztosít, ami garantálja a tökéletes espresso elkészítését.</p>
+      <h3>Maximális teljesítmény</h3>
+      <p>Naponta akár 200+ adag kávé elkészítésére képes, így még a legnagyobb forgalom esetén is biztosítja a folyamatos kávéellátást. A dupla kávétartály lehetővé teszi különböző kávékeverékek egyidejű használatát.</p>
       
-      <h3>Friss tej rendszer</h3>
-      <p>A hűtött friss tej rendszer minden tejhabos ital esetén krémesen habos, barista minőségű eredményt garantál. Az automatikus tisztítási program biztosítja a higiénikus működést.</p>
-      
-      <h3>Intelligens kezelőfelület</h3>
-      <p>A 7 colos színes érintőképernyő intuitív kezelést tesz lehetővé. A felhasználók könnyedén választhatnak a 16 féle ital közül, testreszabhatják italaikat, és akár videós reklámokat is megtekinthetnek.</p>
+      <h3>NESCAFÉ® minőség minden csészében</h3>
+      <p>Minden NESCAFÉ® termék mögött évtizedek kutatása és fejlesztése áll. A precíz adagolás és a tökéletesített receptúrák garantálják a konzisztens, kiváló minőségű kávéélményt.</p>
     `,
-    relatedModels: ['necta-kikko-max', 'bianchi-lei-700', 'necta-concerto'],
+    relatedModels: ['nescafe-alegria-630', 'nescafe-alegria-ats650', 'nescafe-alegria-12500'],
   },
 
-  'sielaff-cvs-650': {
-    title: 'Sielaff CVS 650',
-    description: 'Nagy kapacitású snack és ital kombó automata 650 termékhellyel. Tökéletes választás forgalmas helyszínekre.',
-    category: 'kombo',
+  'nescafe-alegria-ats650': {
+    title: 'NESCAFÉ Alegria ATS650',
+    description: 'Csúcstechnológiás kávéautomata érintőképernyővel. Prémium kávéélmény modern munkakörnyezetben.',
+    category: 'kaveautomata',
     coverImage: {
-      url: 'https://images.unsplash.com/photo-1587049016823-69ef9d68bd44?w=1200',
-      alt: 'Sielaff CVS 650 kombó automata',
+      url: '/images/NESCAFÉ Alegria ATS650.png',
+      alt: 'NESCAFÉ Alegria ATS650 kávéautomata',
     },
     gallery: [
-      { url: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800', alt: 'Termék választék' },
-      { url: 'https://images.unsplash.com/photo-1575224526797-5730d09d781d?w=800', alt: 'Belső elrendezés' },
-      { url: 'https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=800', alt: 'Kezelőfelület' },
+      { url: '/images/NESCAFÉ Alegria ATS650.png', alt: 'NESCAFÉ Alegria ATS650' },
+      { url: '/images/image001 (3).png', alt: 'Touch screen interface' },
+      { url: '/images/EZ Care.PNG', alt: 'Modern design' },
     ],
     features: [
-      '650 termék kapacitás',
-      'Hűtött és szobahőmérsékletű tárolás',
-      'Energiahatékony LED világítás',
-      'Érintésmentes fizetési opciók',
-      'Liftes termék kiadás',
-      'Vandálbiztos kivitel',
+      '7" színes érintőképernyő',
+      'Személyre szabható italok',
+      'WiFi kapcsolat',
+      'Mobilfizetés támogatás',
+      'Automatikus tisztítás',
+      'Videó reklám lehetőség',
     ],
     specifications: [
       {
         group: 'Méretek',
         items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '1580 mm' },
-          { label: 'Mélység', value: '850 mm' },
-          { label: 'Súly', value: '380 kg' },
+          { label: 'Magasság', value: '650 mm' },
+          { label: 'Szélesség', value: '380 mm' },
+          { label: 'Mélység', value: '550 mm' },
+          { label: 'Súly', value: '38 kg' },
         ],
       },
       {
         group: 'Kapacitás',
         items: [
-          { label: 'Snack helyek', value: '350 db' },
-          { label: 'Ital helyek', value: '300 db' },
-          { label: 'Polcok száma', value: '6 + 6' },
-          { label: 'Hűtött tér', value: '0-12°C' },
+          { label: 'Kávé tartály', value: '3 kg' },
+          { label: 'Tej tartály', value: '5 liter' },
+          { label: 'Pohár kapacitás', value: '400 db' },
+          { label: 'Napi kapacitás', value: '150+ adag' },
         ],
       },
       {
-        group: 'Energia',
+        group: 'Technológia',
         items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '650W' },
-          { label: 'Energiaosztály', value: 'A++' },
-          { label: 'Hűtőközeg', value: 'R290' },
+          { label: 'Kijelző', value: '7" touch screen' },
+          { label: 'Kapcsolat', value: 'WiFi, Bluetooth' },
+          { label: 'Fizetés', value: 'NFC, QR kód' },
         ],
       },
     ],
     longDescription: `
-      <p>A Sielaff CVS 650 a legnagyobb kapacitású kombó automatánk, amely egyszerre kínál hűtött italokat és szobahőmérsékletű snackeket. Ideális választás nagy forgalmú helyszínekre, ahol fontos a választék szélessége.</p>
+      <p>A NESCAFÉ® Alegria ATS650 a legmodernebb technológia és a hagyományos kávékészítés művészetének találkozása. Ez az automata a digitális kor igényeire szabott megoldásokat kínál.</p>
       
-      <h3>Maximális választék</h3>
-      <p>650 termékhellyel ez az automata a legnagyobb választékot kínálja. A flexibilis polcrendszer lehetővé teszi különböző méretű termékek tárolását.</p>
+      <h3>Intelligens technológia</h3>
+      <p>A 7 colos érintőképernyő intuitív felhasználói élményt nyújt, miközben lehetővé teszi a teljes testreszabást és a promóciós tartalmak megjelenítését.</p>
       
-      <h3>Energiahatékony működés</h3>
-      <p>Az A++ energiaosztályú automata minimális fogyasztás mellett üzemel. A LED világítás és az intelligens hűtésvezérlés jelentős költségmegtakarítást eredményez.</p>
+      <h3>Kapcsolódás és kényelem</h3>
+      <p>WiFi kapcsolat, mobil fizetési lehetőségek és telemetria támogatás teszi ezt az automatát a modern munkahelyek ideális választásává.</p>
     `,
-    relatedModels: ['sielaff-fk-270', 'bianchi-vega', 'necta-snakky-max'],
+    relatedModels: ['nescafe-alegria-630', 'nescafe-alegria-860', 'nescafe-fts-60-e'],
   },
 
-  'necta-snakky-max': {
-    title: 'Necta Snakky Max',
-    description: 'Kompakt snack automata 32 termékválasztékkal ideális irodai környezetbe. Megbízható és könnyen kezelhető.',
-    category: 'snack',
+  'nescafe-alegria-12500': {
+    title: 'NESCAFÉ Alegria 12500',
+    description: 'Ipari méretű kávéautomata extrém nagy kapacitással. Gyárak és nagy létszámú munkahelyek számára.',
+    category: 'kaveautomata',
     coverImage: {
-      url: 'https://images.unsplash.com/photo-1619975362235-73fd85efa4ba?w=1200',
-      alt: 'Necta Snakky Max snack automata',
+      url: '/images/Alegria 12500.png',
+      alt: 'NESCAFÉ Alegria 12500 kávéautomata',
     },
     gallery: [
-      { url: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800', alt: 'Termék kínálat' },
-      { url: 'https://images.unsplash.com/photo-1575224526797-5730d09d781d?w=800', alt: 'Belső tér' },
-      { url: 'https://images.unsplash.com/photo-1556742400-b5b7a512f7de?w=800', alt: 'Kezelőpanel' },
+      { url: '/images/Alegria 12500.png', alt: 'NESCAFÉ Alegria 12500' },
+      { url: '/images/image001 (3).png', alt: 'Nagy kapacitás' },
+      { url: '/images/EZ Care.PNG', alt: 'Ipari kivitel' },
     ],
     features: [
-      '32 termékválaszték',
-      'Kompakt méret',
-      'LED világítás',
+      'Extrém nagy kapacitás',
+      'Dupla adagoló rendszer',
+      'Robusztus ipari kivitel',
+      'Folyamatos üzemmód',
+      'Távfelügyelet',
+      'Vandálbiztos ház',
+    ],
+    specifications: [
+      {
+        group: 'Méretek',
+        items: [
+          { label: 'Magasság', value: '850 mm' },
+          { label: 'Szélesség', value: '500 mm' },
+          { label: 'Mélység', value: '650 mm' },
+          { label: 'Súly', value: '65 kg' },
+        ],
+      },
+      {
+        group: 'Kapacitás',
+        items: [
+          { label: 'Kávé tartály', value: '2 x 5 kg' },
+          { label: 'Tej tartály', value: '10 liter' },
+          { label: 'Pohár kapacitás', value: '1000 db' },
+          { label: 'Napi kapacitás', value: '500+ adag' },
+        ],
+      },
+    ],
+    longDescription: `
+      <p>A NESCAFÉ® Alegria 12500 az ipari méretű kávéautomaták csúcsmodellje. Kifejezetten nagy létszámú munkahelyek, gyárak és termelő üzemek számára tervezték.</p>
+      
+      <h3>Megállíthatatlan teljesítmény</h3>
+      <p>Napi 500+ adag kávé elkészítésére képes megszakítás nélkül. A dupla adagoló rendszer biztosítja a folyamatos kiszolgálást még csúcsidőben is.</p>
+    `,
+    relatedModels: ['nescafe-alegria-860', 'nescafe-fts-60-e', 'nescafe-alegria-ats650'],
+  },
+
+  'nescafe-fts-30-e': {
+    title: 'NESCAFÉ FTS-30-E',
+    description: 'Kompakt asztali kávéautomata kis csapatok számára. Egyszerű, gyors, minőségi kávé.',
+    category: 'kaveautomata',
+    coverImage: {
+      url: '/images/FTS-30-E-FRONT.jpg',
+      alt: 'NESCAFÉ FTS-30-E kávéautomata',
+    },
+    gallery: [
+      { url: '/images/FTS-30-E-FRONT.jpg', alt: 'FTS-30-E előnézet' },
+      { url: '/images/08 - FTS 30 I SHW FRONT.jpg', alt: 'FTS-30 alternatív nézet' },
+      { url: '/images/EZ Care.PNG', alt: 'Egyszerű kezelés' },
+    ],
+    features: [
+      'Asztali méret',
+      'Gyors kávékészítés',
+      'Egyszerű kezelés',
+      '6 italválaszték',
       'Alacsony energiafogyasztás',
-      'Spirálos kiadó rendszer',
-      'Egyszerű feltöltés',
+      'Csendes működés',
     ],
     specifications: [
       {
         group: 'Méretek',
         items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '855 mm' },
-          { label: 'Mélység', value: '790 mm' },
-          { label: 'Súly', value: '280 kg' },
+          { label: 'Magasság', value: '450 mm' },
+          { label: 'Szélesség', value: '280 mm' },
+          { label: 'Mélység', value: '400 mm' },
+          { label: 'Súly', value: '18 kg' },
         ],
       },
       {
         group: 'Kapacitás',
         items: [
-          { label: 'Termékhelyek', value: '32' },
-          { label: 'Polcok száma', value: '6' },
-          { label: 'Max termék méret', value: '75x75x200 mm' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '85W' },
-          { label: 'Energiaosztály', value: 'A+' },
+          { label: 'Kávé tartály', value: '1 kg' },
+          { label: 'Víztartály', value: '3 liter' },
+          { label: 'Napi kapacitás', value: '50 adag' },
         ],
       },
     ],
     longDescription: `
-      <p>A Necta Snakky Max ideális megoldás kisebb és közepes irodák számára. Kompakt mérete ellenére 32 különböző termék tárolására képes.</p>
+      <p>A NESCAFÉ® FTS-30-E a tökéletes megoldás kis irodák és csapatok számára. Kompakt mérete ellenére teljes értékű kávéélményt nyújt.</p>
       
       <h3>Helytakarékos design</h3>
-      <p>Az automata mindössze 855 mm széles, így szűk helyeken is elfér. A modern, elegáns design minden környezetbe illeszkedik.</p>
-      
-      <h3>Megbízható működés</h3>
-      <p>A spirálos kiadó rendszer biztosítja a termékek sérülésmentes kiadását. Az egyszerű feltöltés és karbantartás minimális állásidőt eredményez.</p>
+      <p>Az asztali méret lehetővé teszi, hogy bárhol elférjen - konyhapulton, irodai sarokban vagy tárgyalóteremben.</p>
     `,
-    relatedModels: ['sielaff-fk-270', 'sielaff-cvs-650'],
+    relatedModels: ['nescafe-fts-60-e', 'nescafe-ftp-30-e', 'nescafe-alegria-630'],
   },
 
-  'bianchi-lei-700': {
-    title: 'Bianchi Lei 700',
-    description: 'Professzionális instant kávéautomata 7 választékkal. Gyors kiszolgálás, egyszerű karbantartás.',
+  'nescafe-fts-60-e': {
+    title: 'NESCAFÉ FTS-60-E',
+    description: 'Közepes méretű automata növekvő csapatok számára. Megbízható teljesítmény, széles választék.',
     category: 'kaveautomata',
     coverImage: {
-      url: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1200',
-      alt: 'Bianchi Lei 700 kávéautomata',
+      url: '/images/02_FTS-60-E-front.jpg',
+      alt: 'NESCAFÉ FTS-60-E kávéautomata',
     },
     gallery: [
-      { url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800', alt: 'Kezelőfelület' },
-      { url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800', alt: 'Kávé készítés' },
-      { url: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=800', alt: 'Belső szerkezet' },
+      { url: '/images/02_FTS-60-E-front.jpg', alt: 'FTS-60-E előnézet' },
+      { url: '/images/image001 (3).png', alt: 'Választék' },
+      { url: '/images/EZ Care.PNG', alt: 'Karbantartás' },
     ],
     features: [
-      '7 féle ital',
-      'Instant rendszer',
-      'Gyors kiszolgálás (15 mp)',
-      'Könnyen tisztítható',
-      'Kompakt méret',
-      'Alacsony karbantartás igény',
-    ],
-    specifications: [
-      {
-        group: 'Méretek',
-        items: [
-          { label: 'Magasság', value: '1700 mm' },
-          { label: 'Szélesség', value: '603 mm' },
-          { label: 'Mélység', value: '543 mm' },
-          { label: 'Súly', value: '75 kg' },
-        ],
-      },
-      {
-        group: 'Kapacitás',
-        items: [
-          { label: 'Instant tartályok', value: '4 x 2,5 l' },
-          { label: 'Pohár adagoló', value: '400 db' },
-          { label: 'Napi kapacitás', value: '150 adag' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '1700W' },
-          { label: 'Vízmelegítő', value: '2,5 liter' },
-        ],
-      },
-    ],
-    longDescription: `
-      <p>A Bianchi Lei 700 az instant kávéautomaták csúcskategóriáját képviseli. Gyors, megbízható és könnyen kezelhető megoldás kisebb irodák számára.</p>
-      
-      <h3>Villámgyors kiszolgálás</h3>
-      <p>Az instant technológiának köszönhetően mindössze 15 másodperc alatt elkészül egy csésze kávé. Nincs várakozás, nincs sorban állás.</p>
-      
-      <h3>Egyszerű üzemeltetés</h3>
-      <p>Minimális karbantartást igényel, könnyen tisztítható. Az instant porok hosszú eltarthatósága miatt ritkábban kell feltölteni.</p>
-    `,
-    relatedModels: ['necta-kikko-max', 'necta-karisma'],
-  },
-
-  'sandenvendo-g-drink': {
-    title: 'SandenVendo G-Drink',
-    description: 'Hűtött ital automata 45 választékkal. Energiahatékony működés, megbízható hűtés.',
-    category: 'ital',
-    coverImage: {
-      url: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1200',
-      alt: 'SandenVendo G-Drink italautomata',
-    },
-    gallery: [
-      { url: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800', alt: 'Ital választék' },
-      { url: 'https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=800', alt: 'Hűtőrendszer' },
-      { url: 'https://images.unsplash.com/photo-1575224526797-5730d09d781d?w=800', alt: 'LED világítás' },
-    ],
-    features: [
-      '45 termék kapacitás',
-      'A++ energiaosztály',
-      'LED világítás',
-      'Digitális hőmérséklet kontroll',
-      'Dupla üvegezés',
-      'Környezetbarát hűtőközeg',
-    ],
-    specifications: [
-      {
-        group: 'Méretek',
-        items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '720 mm' },
-          { label: 'Mélység', value: '790 mm' },
-          { label: 'Súly', value: '280 kg' },
-        ],
-      },
-      {
-        group: 'Kapacitás',
-        items: [
-          { label: 'Palack/doboz', value: '45 féle' },
-          { label: 'Összes kapacitás', value: '450 db' },
-          { label: 'Polcok száma', value: '9' },
-          { label: 'Hűtési tartomány', value: '3-12°C' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '350W' },
-          { label: 'Energiaosztály', value: 'A++' },
-          { label: 'Hűtőközeg', value: 'R290' },
-        ],
-      },
-    ],
-    longDescription: `
-      <p>A SandenVendo G-Drink a legmodernebb hűtéstechnológiát alkalmazza. Az A++ energiaosztály és a környezetbarát hűtőközeg használata minimális környezeti terhelést jelent.</p>
-      
-      <h3>Kiváló energiahatékonyság</h3>
-      <p>A dupla üvegezés és a precíz hőmérséklet-szabályozás akár 50%-os energia megtakarítást eredményez a hagyományos automatákhoz képest.</p>
-      
-      <h3>Tökéletes hűtés</h3>
-      <p>A digitális hőmérséklet kontroll biztosítja, hogy minden ital az ideális hőmérsékleten kerüljön kiadásra.</p>
-    `,
-    relatedModels: ['sandenvendo-vmax', 'sielaff-cvs-650'],
-  },
-
-  'necta-kikko-max': {
-    title: 'Necta Kikko Max',
-    description: 'Univerzális automata forró italokhoz, 12 választékkal. Kompakt méret, nagy teljesítmény.',
-    category: 'kaveautomata',
-    coverImage: {
-      url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=1200',
-      alt: 'Necta Kikko Max',
-    },
-    gallery: [
-      { url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800', alt: 'Érintőképernyő' },
-      { url: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800', alt: 'Kávékészítés' },
-      { url: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=800', alt: 'Belső felépítés' },
-    ],
-    features: [
-      '12 féle ital',
-      'Kompakt design',
-      'Érintőképernyő',
-      'Dupla pohártartó',
-      'Instant és szemes kávé opció',
+      'Közepes kapacitás',
+      '10 italválaszték',
+      'Friss tej opció',
+      'LCD kijelző',
+      'Programozható funkciók',
       'Energiatakarékos mód',
     ],
     specifications: [
       {
         group: 'Méretek',
         items: [
-          { label: 'Magasság', value: '1700 mm' },
-          { label: 'Szélesség', value: '560 mm' },
-          { label: 'Mélység', value: '560 mm' },
-          { label: 'Súly', value: '85 kg' },
+          { label: 'Magasság', value: '550 mm' },
+          { label: 'Szélesség', value: '350 mm' },
+          { label: 'Mélység', value: '500 mm' },
+          { label: 'Súly', value: '28 kg' },
         ],
       },
       {
         group: 'Kapacitás',
         items: [
-          { label: 'Instant tartályok', value: '5 x 2 l' },
-          { label: 'Kávébab tartály', value: '1,2 kg' },
-          { label: 'Pohár adagoló', value: '350 db' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '1900W' },
-          { label: 'Energiaosztály', value: 'A' },
+          { label: 'Kávé tartály', value: '2 kg' },
+          { label: 'Tej tartály', value: '4 liter' },
+          { label: 'Napi kapacitás', value: '100 adag' },
         ],
       },
     ],
     longDescription: `
-      <p>A Necta Kikko Max a középkategóriás kávéautomaták legjobb választása. Kompakt mérete és sokoldalúsága ideálissá teszi közepes méretű irodák számára.</p>
+      <p>A NESCAFÉ® FTS-60-E a növekvő vállalkozások ideális partnere. Egyesíti a kompakt méretet a professzionális teljesítménnyel.</p>
       
-      <h3>Rugalmas konfiguráció</h3>
-      <p>Az automata instant és szemes kávé készítésére is alkalmas. A 12 féle ital választék minden ízlést kielégít.</p>
-      
-      <h3>Modern kezelőfelület</h3>
-      <p>Az intuitív érintőképernyő egyszerűvé teszi az ital kiválasztását és testreszabását.</p>
+      <h3>Rugalmas megoldás</h3>
+      <p>A széles italválaszték és a programozható funkciók lehetővé teszik, hogy minden dolgozó megtalálja a kedvenc italát.</p>
     `,
-    relatedModels: ['necta-karisma', 'bianchi-lei-700'],
+    relatedModels: ['nescafe-fts-30-e', 'nescafe-ftp-60-e', 'nescafe-alegria-630'],
   },
 
-  'sielaff-fk-270': {
-    title: 'Sielaff FK 270',
-    description: 'Közepes méretű snack automata 270 termékhellyel. Ideális közepes forgalmú helyszínekre.',
-    category: 'snack',
-    coverImage: {
-      url: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1200',
-      alt: 'Sielaff FK 270',
-    },
-    gallery: [
-      { url: 'https://images.unsplash.com/photo-1575224526797-5730d09d781d?w=800', alt: 'Termék polcok' },
-      { url: 'https://images.unsplash.com/photo-1619975362235-73fd85efa4ba?w=800', alt: 'Üveges front' },
-      { url: 'https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=800', alt: 'Vezérlőpanel' },
-    ],
-    features: [
-      '270 termék kapacitás',
-      'Flexibilis polcrendszer',
-      'Üveges front',
-      'Modern design',
-      'Liftes kiadó rendszer',
-      'LED megvilágítás',
-    ],
-    specifications: [
-      {
-        group: 'Méretek',
-        items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '1090 mm' },
-          { label: 'Mélység', value: '790 mm' },
-          { label: 'Súly', value: '320 kg' },
-        ],
-      },
-      {
-        group: 'Kapacitás',
-        items: [
-          { label: 'Termékhelyek', value: '270' },
-          { label: 'Polcok száma', value: '8' },
-          { label: 'Állítható polcmagasság', value: 'Igen' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '120W' },
-          { label: 'Energiaosztály', value: 'A+' },
-        ],
-      },
-    ],
-    longDescription: `
-      <p>A Sielaff FK 270 a közepes méretű snack automaták kiváló képviselője. 270 termékhellyel ideális választás közepes forgalmú helyszínekre.</p>
-      
-      <h3>Flexibilis elrendezés</h3>
-      <p>Az állítható polcmagasság lehetővé teszi különböző méretű termékek optimális elhelyezését.</p>
-      
-      <h3>Vonzó megjelenés</h3>
-      <p>Az üveges front és a LED világítás vonzóvá teszi a termékeket, növelve az eladásokat.</p>
-    `,
-    relatedModels: ['necta-snakky-max', 'sielaff-cvs-650'],
-  },
-
-  'necta-concerto': {
-    title: 'Necta Concerto',
-    description: 'Prémium szemes kávé automata barista minőséggel. 20 féle ital, testreszabható receptek.',
+  'nescafe-ftp-30-e': {
+    title: 'NESCAFÉ FTP-30-E',
+    description: 'Prémium asztali automata friss tejjel. Barista minőség az irodában.',
     category: 'kaveautomata',
     coverImage: {
-      url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200',
-      alt: 'Necta Concerto',
+      url: '/images/05 - FTP 30 E VHO SHW FRONT.jpg',
+      alt: 'NESCAFÉ FTP-30-E kávéautomata',
     },
     gallery: [
-      { url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800', alt: 'Touch screen' },
-      { url: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800', alt: 'Barista minőség' },
-      { url: 'https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=800', alt: 'Prémium design' },
+      { url: '/images/05 - FTP 30 E VHO SHW FRONT.jpg', alt: 'FTP-30-E előnézet' },
+      { url: '/images/image001 (3).png', alt: 'Friss tej rendszer' },
+      { url: '/images/EZ Care.PNG', alt: 'Prémium kávé' },
     ],
     features: [
-      'Szemes kávé',
-      'Barista minőség',
-      '20 féle ital',
-      'Testreszabható receptek',
-      '10,1" touch screen',
-      'Két őrlő',
+      'Friss tej rendszer',
+      'Barista minőségű kávé',
+      'Cappuccino és latte',
+      'Kompakt méret',
+      'Automatikus öblítés',
+      'Higiénikus működés',
     ],
     specifications: [
       {
         group: 'Méretek',
         items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '650 mm' },
-          { label: 'Mélység', value: '650 mm' },
-          { label: 'Súly', value: '160 kg' },
+          { label: 'Magasság', value: '480 mm' },
+          { label: 'Szélesség', value: '300 mm' },
+          { label: 'Mélység', value: '420 mm' },
+          { label: 'Súly', value: '22 kg' },
         ],
       },
       {
         group: 'Kapacitás',
         items: [
-          { label: 'Kávébab tartály', value: '2 x 3,5 kg' },
-          { label: 'Instant tartály', value: '4 x 3 l' },
-          { label: 'Tej tartály', value: '12 liter' },
-          { label: 'Napi kapacitás', value: '300+ adag' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '2700W' },
-          { label: 'Energiaosztály', value: 'A++' },
+          { label: 'Kávé tartály', value: '1.5 kg' },
+          { label: 'Tej tartály', value: '2 liter' },
+          { label: 'Napi kapacitás', value: '60 adag' },
         ],
       },
     ],
     longDescription: `
-      <p>A Necta Concerto a csúcskategóriás kávéautomaták mestermûve. Barista minőségű kávét készít szemes kávéból, miközben 20 féle ital közül választhatnak a felhasználók.</p>
+      <p>A NESCAFÉ® FTP-30-E egyesíti az asztali méret kényelmét a friss tejes kávék luxusával. Tökéletes választás minőséget értékelő kis csapatok számára.</p>
       
-      <h3>Barista minőség</h3>
-      <p>A két különálló őrlő lehetővé teszi különböző kávékeverékek használatát. A precíz hőmérséklet és nyomás szabályozás garantálja a tökéletes kávét.</p>
-      
-      <h3>Intelligens technológia</h3>
-      <p>A 10,1" méretű érintőképernyő nem csak a választást teszi egyszerűvé, hanem lehetővé teszi videók és promóciók megjelenítését is.</p>
+      <h3>Friss tej, tökéletes hab</h3>
+      <p>Az integrált friss tej rendszer krémesen habos cappuccinót és lattét készít, barista minőségben.</p>
     `,
-    relatedModels: ['necta-karisma', 'necta-kikko-max'],
+    relatedModels: ['nescafe-ftp-60-e', 'nescafe-fts-30-e', 'nescafe-alegria-630'],
   },
 
-  'bianchi-vega': {
-    title: 'Bianchi Vega',
-    description: 'Kombinált meleg ital és snack automata. Helytakarékos megoldás kis irodák számára.',
-    category: 'kombo',
+  'nescafe-ftp-60-e': {
+    title: 'NESCAFÉ FTP-60-E',
+    description: 'Nagy teljesítményű automata friss tejjel. Professzionális kávéélmény nagyobb csapatok számára.',
+    category: 'kaveautomata',
     coverImage: {
-      url: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1200',
-      alt: 'Bianchi Vega',
+      url: '/images/07 - FTP 60 E SHW_MVH FRONT.jpg',
+      alt: 'NESCAFÉ FTP-60-E kávéautomata',
     },
     gallery: [
-      { url: 'https://images.unsplash.com/photo-1556742400-b5b7a512f7de?w=800', alt: 'Kombo rendszer' },
-      { url: 'https://images.unsplash.com/photo-1575224526797-5730d09d781d?w=800', alt: 'Kávé és snack' },
-      { url: 'https://images.unsplash.com/photo-1587049016823-69ef9d68bd44?w=800', alt: 'Kompakt design' },
+      { url: '/images/07 - FTP 60 E SHW_MVH FRONT.jpg', alt: 'FTP-60-E előnézet' },
+      { url: '/images/image001 (3).png', alt: 'Nagy kapacitás' },
+      { url: '/images/EZ Care.PNG', alt: 'Professzionális' },
     ],
     features: [
-      'Meleg ital + snack',
-      'Helytakarékos',
-      'Egyszerű kezelés',
-      'Megbízható működés',
-      '12 ital + 20 snack',
-      'Kombinált vezérlés',
+      'Nagy kapacitás friss tejjel',
+      '12+ italválaszték',
+      'Dupla tej rendszer',
+      'Professzionális teljesítmény',
+      'LCD vezérlés',
+      'Telemetria ready',
     ],
     specifications: [
       {
         group: 'Méretek',
         items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '1200 mm' },
-          { label: 'Mélység', value: '790 mm' },
-          { label: 'Súly', value: '320 kg' },
+          { label: 'Magasság', value: '600 mm' },
+          { label: 'Szélesség', value: '400 mm' },
+          { label: 'Mélység', value: '550 mm' },
+          { label: 'Súly', value: '35 kg' },
         ],
       },
       {
         group: 'Kapacitás',
         items: [
-          { label: 'Ital választék', value: '12 féle' },
-          { label: 'Snack helyek', value: '20' },
-          { label: 'Pohár adagoló', value: '250 db' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '1850W' },
-          { label: 'Energiaosztály', value: 'A' },
+          { label: 'Kávé tartály', value: '3 kg' },
+          { label: 'Tej tartály', value: '6 liter' },
+          { label: 'Napi kapacitás', value: '150 adag' },
         ],
       },
     ],
     longDescription: `
-      <p>A Bianchi Vega tökéletes megoldás kis irodák számára, ahol nincs hely két külön automatának. Egyesíti a kávéautomata és snack automata funkcióit.</p>
+      <p>A NESCAFÉ® FTP-60-E a professzionális friss tejes automaták csúcsmodellje. Nagy kapacitása és széles italválasztéka ideálissá teszi forgalmas irodák számára.</p>
       
-      <h3>Helytakarékos megoldás</h3>
-      <p>Egyetlen automatában kaphat helyet a teljes kávé és snack kínálat. Ideális választás korlátozott helyiségekbe.</p>
-      
-      <h3>Költséghatékony üzemeltetés</h3>
-      <p>Egy automata karbantartása és feltöltése egyszerűbb és olcsóbb, mint két külön gépé.</p>
+      <h3>Maximális választék, maximális minőség</h3>
+      <p>12+ különböző ital, mindegyik a NESCAFÉ® minőségi kávéjából és friss tejből készül.</p>
     `,
-    relatedModels: ['sielaff-cvs-650', 'necta-snakky-max'],
+    relatedModels: ['nescafe-ftp-30-e', 'nescafe-fts-60-e', 'nescafe-alegria-860'],
   },
 
-  'sandenvendo-vmax': {
-    title: 'SandenVendo VMax',
-    description: 'Nagy kapacitású hűtött ital automata 720 palack/doboz kapacitással. Ipari környezetbe ajánlott.',
-    category: 'ital',
+  // Más márkájú automata megtartása változatosság kedvéért
+  'astoria-forma': {
+    title: 'Astoria Forma',
+    description: 'Professzionális félautomata kávégép HORECA szektornak. Olasz minőség és design.',
+    category: 'kaveautomata',
     coverImage: {
-      url: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200',
-      alt: 'SandenVendo VMax',
+      url: '/images/Astoria forma.jpg',
+      alt: 'Astoria Forma kávégép',
     },
     gallery: [
-      { url: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=800', alt: 'Nagy kapacitás' },
-      { url: 'https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=800', alt: 'Ipari kivitel' },
-      { url: 'https://images.unsplash.com/photo-1575224526797-5730d09d781d?w=800', alt: 'Masszív felépítés' },
+      { url: '/images/Astoria forma.jpg', alt: 'Astoria Forma' },
+      { url: '/images/image001 (3).png', alt: 'Professzionális' },
+      { url: '/images/EZ Care.PNG', alt: 'HORECA' },
     ],
     features: [
-      '720 termék kapacitás',
-      'Ipari kivitel',
-      'Robusztus design',
-      'Extrém körülményekhez',
-      'Vandálbiztos',
-      'Dupla hűtőrendszer',
+      'Félautomata működés',
+      'Professzionális gőzkar',
+      '2 csoportos kivitel',
+      'Rozsdamentes acél ház',
+      'Programozható adagolás',
+      'HORECA minőség',
     ],
     specifications: [
       {
         group: 'Méretek',
         items: [
-          { label: 'Magasság', value: '1830 mm' },
-          { label: 'Szélesség', value: '1470 mm' },
-          { label: 'Mélység', value: '900 mm' },
-          { label: 'Súly', value: '420 kg' },
+          { label: 'Magasság', value: '500 mm' },
+          { label: 'Szélesség', value: '700 mm' },
+          { label: 'Mélység', value: '550 mm' },
+          { label: 'Súly', value: '55 kg' },
+        ],
+      },
+      {
+        group: 'Teljesítmény',
+        items: [
+          { label: 'Kazán', value: '11 liter' },
+          { label: 'Teljesítmény', value: '3500W' },
+          { label: 'Feszültség', value: '400V 3F' },
+        ],
+      },
+    ],
+    longDescription: `
+      <p>Az Astoria Forma az olasz kávékultúra és mérnöki precizitás találkozása. Professzionális HORECA környezetbe tervezett félautomata kávégép.</p>
+      
+      <h3>Olasz tradíció</h3>
+      <p>Évtizedes tapasztalat és a legjobb olasz hagyományok egyesülnek ebben a gépben, garantálva a tökéletes espresso elkészítését.</p>
+    `,
+    relatedModels: ['nivona-nicr-960', 'nescafe-alegria-ats650'],
+  },
+
+  'nivona-nicr-960': {
+    title: 'Nivona NICR 960',
+    description: 'Prémium automata kávéfőző otthoni és kis irodai használatra. Svájci precizitás.',
+    category: 'kaveautomata',
+    coverImage: {
+      url: '/images/nivona-nicr-960-front-view_0.png',
+      alt: 'Nivona NICR 960 kávéfőző',
+    },
+    gallery: [
+      { url: '/images/nivona-nicr-960-front-view_0.png', alt: 'Nivona NICR 960' },
+      { url: '/images/image001 (3).png', alt: 'Prémium minőség' },
+      { url: '/images/EZ Care.PNG', alt: 'Egyszerű tisztítás' },
+    ],
+    features: [
+      'One-touch cappuccino',
+      'Aromaprofil beállítás',
+      'Színes TFT kijelző',
+      'Bluetooth vezérlés',
+      'Automatikus tisztítás',
+      'Svájci minőség',
+    ],
+    specifications: [
+      {
+        group: 'Méretek',
+        items: [
+          { label: 'Magasság', value: '340 mm' },
+          { label: 'Szélesség', value: '240 mm' },
+          { label: 'Mélység', value: '440 mm' },
+          { label: 'Súly', value: '11 kg' },
         ],
       },
       {
         group: 'Kapacitás',
         items: [
-          { label: 'Összes kapacitás', value: '720 palack/doboz' },
-          { label: 'Választék', value: '12 féle' },
-          { label: 'Polcok száma', value: '12' },
-        ],
-      },
-      {
-        group: 'Energia',
-        items: [
-          { label: 'Feszültség', value: '230V / 50Hz' },
-          { label: 'Teljesítmény', value: '750W' },
-          { label: 'Hűtőközeg', value: 'R290' },
+          { label: 'Bab tartály', value: '250 g' },
+          { label: 'Víztartály', value: '2.2 liter' },
+          { label: 'Zacctartó', value: '11 adag' },
         ],
       },
     ],
     longDescription: `
-      <p>A SandenVendo VMax a legnagyobb kapacitású italautomatánk, kifejezetten nagy forgalmú és ipari környezetbe tervezve.</p>
+      <p>A Nivona NICR 960 a svájci precizitás és a modern technológia találkozása. Tökéletes választás igényes kávékedvelők számára.</p>
       
-      <h3>Extrém körülményekre tervezve</h3>
-      <p>A vandálbiztos kivitel és a megerősített szerkezet alkalmassá teszi kültéri vagy ipari használatra is.</p>
-      
-      <h3>Maximális kapacitás</h3>
-      <p>720 palack vagy doboz befogadására képes, így ritkábban igényel feltöltést még nagy forgalom esetén is.</p>
+      <h3>Személyre szabott kávéélmény</h3>
+      <p>Az aromaprofil beállítási lehetőségek és a Bluetooth vezérlés lehetővé teszi, hogy mindenki a saját ízlése szerint készítse el kávéját.</p>
     `,
-    relatedModels: ['sandenvendo-g-drink', 'sielaff-cvs-650'],
+    relatedModels: ['astoria-forma', 'nescafe-ftp-30-e'],
   },
+
 }
 
-// Segédfüggvény a kapcsolódó modellek adatainak lekérésére
+// Helper functions remain the same
 export function getRelatedModels(modelSlug: string) {
   const model = modelDatabase[modelSlug]
   if (!model) return []
@@ -670,7 +583,6 @@ export function getRelatedModels(modelSlug: string) {
     .filter((item): item is NonNullable<typeof item> => item !== null)
 }
 
-// Kategória nevek magyar nyelven
 export function getCategoryName(slug: string) {
   const categories: Record<string, string> = {
     kaveautomata: 'Kávéautomata',
@@ -681,7 +593,6 @@ export function getCategoryName(slug: string) {
   return categories[slug] || slug
 }
 
-// Összes modell lekérése listához
 export function getAllModels() {
   return Object.entries(modelDatabase).map(([slug, model]) => ({
     title: model.title,
@@ -696,7 +607,6 @@ export function getAllModels() {
   }))
 }
 
-// Dinamikus útvonalak generálásához
 export function getAllModelSlugs() {
   return Object.keys(modelDatabase)
 }
