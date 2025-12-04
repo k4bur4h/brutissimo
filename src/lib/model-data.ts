@@ -36,8 +36,6 @@ export const modelDatabase: Record<string, ModelData> = {
     },
     gallery: [
       { url: '/images/NESCAFÉ Alegria 630 front.jpg', alt: 'NESCAFÉ Alegria 630 előnézet' },
-      { url: '/images/image001 (3).png', alt: 'NESCAFÉ termékválaszték' },
-      { url: '/images/EZ Care.PNG', alt: 'Egyszerű karbantartás' },
     ],
     features: [
       'Kompakt méret - helytakarékos',
@@ -100,8 +98,6 @@ export const modelDatabase: Record<string, ModelData> = {
     },
     gallery: [
       { url: '/images/NESCAFÉ Alegria 860.jpg', alt: 'NESCAFÉ Alegria 860' },
-      { url: '/images/image001 (3).png', alt: 'Termékválaszték' },
-      { url: '/images/EZ Care.PNG', alt: 'Karbantartás' },
     ],
     features: [
       'Nagy kapacitás - 200+ adag naponta',
@@ -161,8 +157,6 @@ export const modelDatabase: Record<string, ModelData> = {
     },
     gallery: [
       { url: '/images/NESCAFÉ Alegria ATS650.png', alt: 'NESCAFÉ Alegria ATS650' },
-      { url: '/images/image001 (3).png', alt: 'Touch screen interface' },
-      { url: '/images/EZ Care.PNG', alt: 'Modern design' },
     ],
     features: [
       '7" színes érintőképernyő',
@@ -217,13 +211,13 @@ export const modelDatabase: Record<string, ModelData> = {
     description: 'Ipari méretű kávéautomata extrém nagy kapacitással. Gyárak és nagy létszámú munkahelyek számára.',
     category: 'kaveautomata',
     coverImage: {
-      url: '/images/Alegria 12500.png',
+      url: '/images/NESCAFÉ Alegria 860.jpg',
       alt: 'NESCAFÉ Alegria 12500 kávéautomata',
     },
     gallery: [
       { url: '/images/Alegria 12500.png', alt: 'NESCAFÉ Alegria 12500' },
-      { url: '/images/image001 (3).png', alt: 'Nagy kapacitás' },
-      { url: '/images/EZ Care.PNG', alt: 'Ipari kivitel' },
+      { url: '/images/NESCAFÉ Alegria ATS650.png', alt: 'Nagy kapacitás' },
+      { url: '/images/02_FTS-60-E-front.jpg', alt: 'Ipari kivitel' },
     ],
     features: [
       'Extrém nagy kapacitás',
@@ -273,7 +267,6 @@ export const modelDatabase: Record<string, ModelData> = {
     gallery: [
       { url: '/images/FTS-30-E-FRONT.jpg', alt: 'FTS-30-E előnézet' },
       { url: '/images/08 - FTS 30 I SHW FRONT.jpg', alt: 'FTS-30 alternatív nézet' },
-      { url: '/images/EZ Care.PNG', alt: 'Egyszerű kezelés' },
     ],
     features: [
       'Asztali méret',
@@ -321,8 +314,6 @@ export const modelDatabase: Record<string, ModelData> = {
     },
     gallery: [
       { url: '/images/02_FTS-60-E-front.jpg', alt: 'FTS-60-E előnézet' },
-      { url: '/images/image001 (3).png', alt: 'Választék' },
-      { url: '/images/EZ Care.PNG', alt: 'Karbantartás' },
     ],
     features: [
       'Közepes kapacitás',
@@ -370,8 +361,6 @@ export const modelDatabase: Record<string, ModelData> = {
     },
     gallery: [
       { url: '/images/05 - FTP 30 E VHO SHW FRONT.jpg', alt: 'FTP-30-E előnézet' },
-      { url: '/images/image001 (3).png', alt: 'Friss tej rendszer' },
-      { url: '/images/EZ Care.PNG', alt: 'Prémium kávé' },
     ],
     features: [
       'Friss tej rendszer',
@@ -419,8 +408,6 @@ export const modelDatabase: Record<string, ModelData> = {
     },
     gallery: [
       { url: '/images/07 - FTP 60 E SHW_MVH FRONT.jpg', alt: 'FTP-60-E előnézet' },
-      { url: '/images/image001 (3).png', alt: 'Nagy kapacitás' },
-      { url: '/images/EZ Care.PNG', alt: 'Professzionális' },
     ],
     features: [
       'Nagy kapacitás friss tejjel',
@@ -469,8 +456,6 @@ export const modelDatabase: Record<string, ModelData> = {
     },
     gallery: [
       { url: '/images/Astoria forma.jpg', alt: 'Astoria Forma' },
-      { url: '/images/image001 (3).png', alt: 'Professzionális' },
-      { url: '/images/EZ Care.PNG', alt: 'HORECA' },
     ],
     features: [
       'Félautomata működés',
@@ -518,8 +503,6 @@ export const modelDatabase: Record<string, ModelData> = {
     },
     gallery: [
       { url: '/images/nivona-nicr-960-front-view_0.png', alt: 'Nivona NICR 960' },
-      { url: '/images/image001 (3).png', alt: 'Prémium minőség' },
-      { url: '/images/EZ Care.PNG', alt: 'Egyszerű tisztítás' },
     ],
     features: [
       'One-touch cappuccino',

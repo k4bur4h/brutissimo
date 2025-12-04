@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils'
 const navigation = [
   { name: 'Főoldal', href: '/' },
   { name: 'Modellek', href: '/modellek' },
+  { name: 'Termékek', href: '/termekek' },
   { name: 'Szolgáltatások', href: '/szolgaltatasok' },
   { name: 'Rólunk', href: '/rolunk' },
   // { name: 'Blog', href: '/blog' }, // Ideiglenesen kikapcsolva

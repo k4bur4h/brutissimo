@@ -3,6 +3,7 @@ import { FeatureCard } from '@/components/blocks/feature-card'
 import { ModelCard } from '@/components/blocks/model-card'
 import { CTASection } from '@/components/blocks/cta-section'
 import { LogoWall } from '@/components/blocks/logo-wall'
+import NescafeStory from '@/components/blocks/nescafe-story'
 import { Section } from '@/components/ui/section'
 import { Container } from '@/components/ui/container'
 import { Heading } from '@/components/ui/heading'
@@ -170,6 +171,9 @@ export default function HomePage() {
           </div>
         </Container>
       </Section>
+
+      {/* NESCAFÉ Brand Story */}
+      <NescafeStory />
 
       {/* Szolgáltatások */}
       <Section spacing="lg" background="gray">
