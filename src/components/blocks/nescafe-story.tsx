@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function NescafeStory() {
@@ -53,7 +52,7 @@ export default function NescafeStory() {
               <p className="text-gray-100 mt-4">
                 <strong className="text-white">1938-ban</strong> megtalálták a
                 megoldást, és megszületett a NESCAFÉ®. A Nestlé első három betűje
-                és a „kávézó" (café) szó egyesítésével született meg a NESCAFÉ®,
+                és a &ldquo;kávézó&rdquo; (café) szó egyesítésével született meg a NESCAFÉ®,
                 egy akkor még új név a kávé világában.
               </p>
             </div>
@@ -102,9 +101,9 @@ export default function NescafeStory() {
 
             <div className="text-center pt-8">
               <p className="text-xl text-gray-200 italic">
-                "A NESCAFÉ® tudás, eszközök és technológia segítségével szeretné
+                &ldquo;A NESCAFÉ® tudás, eszközök és technológia segítségével szeretné
                 segíteni a gazdákat abban, hogy rugalmasabbá tegyék a
-                kávétermesztést."
+                kávétermesztést.&rdquo;
               </p>
             </div>
           </div>
