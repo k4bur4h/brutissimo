@@ -78,29 +78,6 @@ const timeline = [
   },
 ]
 
-const team = [
-  {
-    name: 'Kovács János',
-    position: 'Ügyvezető igazgató',
-    description: '15 év tapasztalat a vending iparágban',
-  },
-  {
-    name: 'Nagy Andrea',
-    position: 'Értékesítési vezető',
-    description: 'Szakértő a B2B kapcsolatépítésben',
-  },
-  {
-    name: 'Szabó Péter',
-    position: 'Szerviz vezető',
-    description: 'Műszaki szakember 200+ automata ismeretével',
-  },
-  {
-    name: 'Tóth Eszter',
-    position: 'Ügyfélszolgálati vezető',
-    description: 'Az ügyfél elégedettség bajnoka',
-  },
-]
-
 const stats = [
   { number: '10+', label: 'Év tapasztalat' },
   { number: '500+', label: 'Elégedett partner' },
@@ -215,30 +192,6 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* Csapat */}
-      <Section spacing="lg">
-        <Container>
-          <div className="text-center mb-12">
-            <Heading as="h2" size="2xl">
-              Csapatunk
-            </Heading>
-            <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-              Szakértő csapatunk garantálja a sikeres együttműködést
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-neutral-200"></div>
-                <h3 className="font-semibold">{member.name}</h3>
-                <p className="text-sm text-primary-600 mb-2">{member.position}</p>
-                <p className="text-sm text-neutral-600">{member.description}</p>
-              </Card>
-            ))}
           </div>
         </Container>
       </Section>

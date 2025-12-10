@@ -18,8 +18,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Telefon',
-    content: '+36 30 123 4567',
-    link: 'tel:+36301234567',
+    content: '+36 30 494 0979',
+    link: 'tel:+36304940979',
   },
   {
     icon: Mail,
@@ -30,8 +30,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Cím',
-    content: '1234 Budapest, Példa utca 10.',
-    link: 'https://maps.google.com',
+    content: '1112 Budapest, Kékperje u. 8.',
+    link: 'https://maps.google.com/?q=1112+Budapest,+Kékperje+u.+8.',
   },
   {
     icon: Clock,

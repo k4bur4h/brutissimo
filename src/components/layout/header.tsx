@@ -24,13 +24,19 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-neutral-200">
       <Container>
         <nav className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center space-x-2">
               <span className="text-2xl">☕</span>
               <span className="font-display font-bold text-xl text-neutral-900">
                 Brutissimo
               </span>
             </Link>
+            <div className="h-8 w-px bg-neutral-300" />
+            <div className="flex items-center">
+              <span className="font-bold text-lg text-red-700">
+                NESCAFÉ<sup className="text-xs">®</sup>
+              </span>
+            </div>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -66,12 +72,18 @@ export function Header() {
         <div className="fixed inset-0 z-50">
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-900/10">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center space-x-2">
-                <span className="text-2xl">☕</span>
-                <span className="font-display font-bold text-xl text-neutral-900">
-                  Brutissimo
+              <div className="flex items-center gap-3">
+                <Link href="/" className="flex items-center space-x-2">
+                  <span className="text-2xl">☕</span>
+                  <span className="font-display font-bold text-xl text-neutral-900">
+                    Brutissimo
+                  </span>
+                </Link>
+                <div className="h-6 w-px bg-neutral-300" />
+                <span className="font-bold text-base text-red-700">
+                  NESCAFÉ<sup className="text-xs">®</sup>
                 </span>
-              </Link>
+              </div>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-neutral-700"
