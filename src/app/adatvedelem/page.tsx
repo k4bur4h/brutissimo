@@ -26,11 +26,11 @@ export default function PrivacyPage() {
             <h2>1. Adatkezelő adatai</h2>
             <p>
               <strong>Név:</strong> Brutissimo Kft.<br />
-              <strong>Székhely:</strong> 1234 Budapest, Példa utca 10.<br />
+              <strong>Székhely:</strong> 1112 Budapest, Kékperje u. 8.<br />
               <strong>Cégjegyzékszám:</strong> 01-09-123456<br />
               <strong>Adószám:</strong> 12345678-2-41<br />
               <strong>E-mail:</strong> info@brutissimo.hu<br />
-              <strong>Telefon:</strong> +36 30 123 4567
+              <strong>Telefon:</strong> +36 30 494 0979
             </p>
 
             <h2>2. Adatkezelés jogalapja</h2>

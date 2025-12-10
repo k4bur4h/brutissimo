@@ -80,7 +80,7 @@ export function Footer() {
               <ul className="space-y-2">
                 <li className="flex items-start space-x-2">
                   <Phone className="h-4 w-4 mt-0.5 text-neutral-400" />
-                  <span className="text-neutral-400 text-sm">+36 30 123 4567</span>
+                  <span className="text-neutral-400 text-sm">+36 30 494 0979</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <Mail className="h-4 w-4 mt-0.5 text-neutral-400" />
@@ -94,7 +94,7 @@ export function Footer() {
                 <li className="flex items-start space-x-2">
                   <MapPin className="h-4 w-4 mt-0.5 text-neutral-400" />
                   <span className="text-neutral-400 text-sm">
-                    1234 Budapest, Példa utca 10.
+                    1112 Budapest, Kékperje u. 8.
                   </span>
                 </li>
               </ul>

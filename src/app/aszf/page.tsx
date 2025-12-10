@@ -25,9 +25,10 @@ export default function TermsPage() {
           <div className="max-w-4xl mx-auto prose prose-lg">
             <h2>1. Általános rendelkezések</h2>
             <p>
-              Jelen Általános Szerződési Feltételek (a továbbiakban: ÁSZF) a Brutissimo Kft. 
-              (székhely: 1234 Budapest, Példa utca 10., cégjegyzékszám: 01-09-123456, 
-              adószám: 12345678-2-41, a továbbiakban: Szolgáltató) által nyújtott vending 
+              Jelen Általános Szerződési Feltételek (a továbbiakban: ÁSZF) a Brutissimo Kft.
+              (székhely: 1112 Budapest, Kékperje u. 8., cégjegyzékszám: 01-09-123456,
+              adószám: 12345678-2-41, telefonszám: +36 30 494 0979,
+              e-mail: info@brutissimo.hu, a továbbiakban: Szolgáltató) által nyújtott vending
               automata bérleti és üzemeltetési szolgáltatásokra vonatkoznak.
             </p>
 
