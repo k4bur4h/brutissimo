@@ -2,10 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* NESCAFÉ Brand Font - Using Helvetica Neue Bold as close approximation to NESCAFÉ Sans */
+/* NESCAFÉ Brand Font - Official NESCAFÉ Sans */
+@font-face {
+  font-family: 'NESCAFÉ Sans';
+  src: url('/fonts/NescafeSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NESCAFÉ Sans';
+  src: url('/fonts/NescafeSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   .font-nescafe {
-    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'NESCAFÉ Sans', 'Helvetica Neue', 'Arial', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
   }
