@@ -65,26 +65,30 @@ export default async function ModelDetailPage({ params }: PageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Gallery */}
             <div className="space-y-4">
-              <div className="aspect-square relative overflow-hidden rounded-xl">
-                <Image
-                  src={model.coverImage.url}
-                  alt={model.coverImage.alt}
-                  fill
-                  className="object-cover"
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
+              <div className="aspect-square relative overflow-hidden rounded-xl bg-neutral-100">
+                <div className="relative w-full h-full p-8">
+                  <Image
+                    src={model.coverImage.url}
+                    alt={model.coverImage.alt}
+                    fill
+                    className="object-contain"
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
               </div>
               <div className="grid grid-cols-3 gap-4">
                 {model.gallery.map((image, index) => (
-                  <div key={index} className="aspect-square relative overflow-hidden rounded-lg">
-                    <Image
-                      src={image.url}
-                      alt={image.alt}
-                      fill
-                      className="object-cover hover:scale-105 transition-transform cursor-pointer"
-                      sizes="(max-width: 1024px) 33vw, 200px"
-                    />
+                  <div key={index} className="aspect-square relative overflow-hidden rounded-lg bg-neutral-100">
+                    <div className="relative w-full h-full p-4">
+                      <Image
+                        src={image.url}
+                        alt={image.alt}
+                        fill
+                        className="object-contain hover:scale-105 transition-transform cursor-pointer"
+                        sizes="(max-width: 1024px) 33vw, 200px"
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
