@@ -33,7 +33,7 @@ export function Header() {
             </Link>
             <div className="h-8 w-px bg-neutral-300" />
             <div className="flex items-center">
-              <span className="font-bold text-lg text-red-700">
+              <span className="font-nescafe text-lg text-red-700">
                 NESCAFÉ<sup className="text-xs">®</sup>
               </span>
             </div>
@@ -80,7 +80,7 @@ export function Header() {
                   </span>
                 </Link>
                 <div className="h-6 w-px bg-neutral-300" />
-                <span className="font-bold text-base text-red-700">
+                <span className="font-nescafe text-base text-red-700">
                   NESCAFÉ<sup className="text-xs">®</sup>
                 </span>
               </div>

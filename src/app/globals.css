@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* NESCAFÉ Brand Font - Using Helvetica Neue Bold as close approximation to NESCAFÉ Sans */
+@layer base {
+  .font-nescafe {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}

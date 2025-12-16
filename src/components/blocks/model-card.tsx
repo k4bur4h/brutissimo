@@ -35,13 +35,15 @@ export function ModelCard({
       <Link href={`/modellek/${slug}`}>
         <div className="aspect-[4/3] relative overflow-hidden bg-neutral-100">
           {image ? (
-            <Image
-              src={image.url}
-              alt={image.alt || title}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+            <div className="relative w-full h-full p-6">
+              <Image
+                src={image.url}
+                alt={image.alt || title}
+                fill
+                className="object-contain transition-transform duration-300 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
           ) : (
             <div className="flex items-center justify-center h-full text-neutral-400">
               <span className="text-4xl">📦</span>

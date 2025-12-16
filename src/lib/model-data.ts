@@ -152,11 +152,11 @@ export const modelDatabase: Record<string, ModelData> = {
     description: 'Csúcstechnológiás kávéautomata érintőképernyővel. Prémium kávéélmény modern munkakörnyezetben.',
     category: 'kaveautomata',
     coverImage: {
-      url: '/images/NESCAFÉ Alegria ATS650.png',
+      url: '/images/NESCAFÉ Alegria ATS650.jpg',
       alt: 'NESCAFÉ Alegria ATS650 kávéautomata',
     },
     gallery: [
-      { url: '/images/NESCAFÉ Alegria ATS650.png', alt: 'NESCAFÉ Alegria ATS650' },
+      { url: '/images/NESCAFÉ Alegria ATS650.jpg', alt: 'NESCAFÉ Alegria ATS650' },
     ],
     features: [
       '7" színes érintőképernyő',
